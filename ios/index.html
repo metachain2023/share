@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<title>元链加速器</title>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/style-2.css" />
+
+<script type="text/javascript" charset="UTF-8" src="https://web.cdn.openinstall.io/openinstall.js"></script>
+<script type="text/javascript">
+	var channel = "guanwang";
+  	$(document).ready(function(){
+  		var data = OpenInstall.parseUrlParams();///openinstall.js中提供的工具函数，解析url中的所有查询参数
+        if(data.channel==undefined || data.channel == "" || data.channel == null || data.channel == "undefined"){
+        	data.channel = channel;
+        }else{
+        	channel = data.channel;
+        }
+
+  		var sUserAgent = navigator.userAgent;
+        var isAppleMobile = /iphone|ipad|ios/i.test(sUserAgent.toLowerCase());
+        if(isAppleMobile){
+			// new OpenInstall({
+				
+			// 	appKey : "b6ag8j",
+				
+			// 	onready : function() {
+				
+			// 		this.schemeWakeup();
+					
+			// 		var m = this;
+
+			// 		$("body").on('click',".downloadButton", function(){
+			// 			m.wakeupOrInstall();
+			// 			return false;
+			// 		})
+					
+			// 	}
+			// }, data);
+        }else{
+			$("#body_id").on('click',".downloadButton", function(){
+				$('#one-bg').toggle();
+                $("#ios-modal").toggle();
+			});
+        	 
+        }
+		
+  	})
+
+  	function iosDownload(){
+  		$('#one-bg').toggle();
+        $("#ios-modal").toggle();
+  	}
+
+  	function androidDownload(){
+  		window.location = "https://share.intlsourcetrading.com/android/"+channel+"/download";
+        let callback = function(){}	
+        gtag('event', 'conversion', {
+			'send_to': btn_gtag,
+			'event_callback': callback
+		});
+  	}
+</script>
+
+</head>
+
+<body id="body_id">
+	<header class="header">
+		<div class="headK flexC fl-bet">
+			<a href="javascript:;" class="hdlogo flexC">
+				<img src="images/icon/Logo.png"><p>元链加速器</p>
+			</a>				
+			<!--导航-开始-->
+			<div class="Menu">
+				<ul class="flexC">
+					<li><a href="#NyT1" id="NyT11" class="MenuA on">首页</a></li>
+					<li><a href="#NyT2" id="NyT22" class="MenuA">下载</a></li>
+					<li><a href="#NyT3" id="NyT33" class="MenuA">功能</a></li>
+					<li><a href="#NyT4" id="NyT44" class="MenuA">发展路线</a></li>
+					<li><a href="#NyT5" id="NyT55" class="MenuA">关于我们</a></li>
+				</ul> 
+			</div>                                                                              
+			<!--导航-结束-->
+			<a href="javascript:;" class="wapNav"></a>
+		</div>
+	</header>
+	<div class="backB"></div>
+	<div class="IndBac Indban Huans" id="NyT1">
+		
+		<div class="banI01"><img src="images/icon/banner01.png"></div>
+		<div class="banI02 pc"><img src="images/icon/banner02.png"></div>
+		<div class="banI02 wap"><img src="images/icon/banner03.png"></div>
+		<div class="IndbanF">元链最新版客户端</div>
+	</div>
+	
+	<div class="Indwin flex fl-bet Huans" id="NyT2">
+		<div class="IndwinN Huans pc">
+			<img src="images/back/winIB01.jpg">
+			<div class="IndwinZ flexC fl-cen">
+				<div class="IndwinI"><img src="images/icon/winI01.png"></div>
+				<div class="IndwinP">
+					<h3>windows</h3>
+					<p>客户端</p>
+				</div>
+				<div class="IndwinB flexC fl-cen">
+					<a href="javascript:;" class="Indwina flexC fl-cen IndwinNO" style="background: gray;"><img src="images/icon/winMore.png"><i></i><p>敬请期待</p></a>
+				</div>
+			</div>
+		</div>
+		<div class="IndwinN Huans pc">
+			<img src="images/back/winIB02.jpg">
+			<div class="IndwinZ flexC fl-cen">
+				<div class="IndwinI"><img src="images/icon/winI02.png"></div>
+				<div class="IndwinP">
+					<h3>Mac</h3>
+					<p>客户端</p>
+				</div>
+				<div class="IndwinB flexC fl-cen">
+					<a href="javascript:;" class="Indwina flexC fl-cen IndwinNO" style="background: gray;"><img src="images/icon/winMore.png"><i></i><p>敬请期待</p></a>
+				</div>
+			</div>
+		</div>
+		<div class="IndwinN Huans">
+			<img src="images/back/winIB03.jpg">
+			<div class="IndwinZ flexC fl-cen">
+				<div class="IndwinI"><img src="images/icon/winI03.png"></div>
+				<div class="IndwinP">
+					<h3>IOS</h3>
+					<p>客户端</p>
+				</div>
+								
+<div class="IndwinB flexC fl-cen">
+<a href="download.html" class="Indwina flexC fl-cen"><img src="images/icon/winMore.png"><i></i><p>立即下载</p></a>
+</div>			
+				
+				
+				
+				
+			</div>
+		</div>
+		
+		
+		<div class="IndwinN Huans">
+			<img src="images/back/winIB04.jpg">
+			<div class="IndwinZ flexC fl-cen">
+				<div class="IndwinI"><img src="images/icon/winI04.png"></div>
+				<div class="IndwinP">
+					<h3>Android</h3>
+					<p>客户端</p>
+				</div>
+				<div class="IndwinB flexC fl-cen">
+					<a href="javascript:;" class="downloadButton Indwina flexC fl-cen"><img src="images/icon/winMore.png"><i></i><p>立即下载</p></a>
+				</div>
+			</div>
+		</div>
+		<div class="IndwinN Huans wap">
+			<img src="images/back/winIB01.jpg">
+			<div class="IndwinZ flexC fl-cen">
+				<div class="IndwinI"><img src="images/icon/winI01.png"></div>
+				<div class="IndwinP">
+					<h3>windows</h3>
+					<p>客户端</p>
+				</div>
+				<div class="IndwinB flexC fl-cen">
+					<a href="javascript:;" class="Indwina flexC fl-cen IndwinNO" style="background: gray;"><img src="images/icon/winMore.png"><i></i><p>敬请期待</p></a>
+				</div>
+			</div>
+		</div>
+		<div class="IndwinN Huans wap">
+			<img src="images/back/winIB02.jpg">
+			<div class="IndwinZ flexC fl-cen">
+				<div class="IndwinI"><img src="images/icon/winI02.png"></div>
+				<div class="IndwinP">
+					<h3>Mac</h3>
+					<p>客户端</p>
+				</div>
+				<div class="IndwinB flexC fl-cen">
+					<a href="javascript:;" class="Indwina flexC fl-cen IndwinNO" style="background: gray;"><img src="images/icon/winMore.png"><i></i><p>敬请期待</p></a>
+				</div>
+			</div>
+		</div>
+		<div class="TCB">敬请期待</div>
+	</div>
+	
+	<div class="IndBac Indset Huans" id="NyT3">
+		<div class="IndfloT">简单实惠，安全隐匿，快速稳定，挖矿激励</div>
+		<div class="IndsetK flex fl-bet">
+			<div class="IndsetN Huans">
+				<img src="images/icon/Indset01.png">
+				<i></i>
+				<h3 class="Huans">DPN去中心化隐私混合网络</h3>
+				<p class="Huans">&emsp;&emsp;去中心化隐私网络是一种混合P2P分布式带宽共享网络，用于绕过区域审查并确保隐私。网络是无服务器的，并且是分布式的;<br>用户数据永远不会被记录，泄漏，被黑客入侵。每个节点操作员都有权担任客户端和服务器。节点运营商因为网络贡献带宽而获得了丰厚的回报。与传统的P2P网络模型相比，采取激励机制确保了网络的使用稳定性。</p>
+			</div>
+			<div class="IndsetN Huans">
+				<img src="images/icon/Indset02.png">
+				<i></i>
+				<h3 class="Huans">去中心化网络设施</h3>
+				<p class="Huans">&emsp;&emsp;DNS是用于解析IP地址和查询互联网的体系结构，拥有集中式DNS基础结构会使互联网极为脆弱，并且容易受到审查和攻击，而去中心化的DNS服务有助于使互联网更加民主安全;CDN通过在云中缓存内容来加快网页游览体验，去中心化CDN可以更快获取访问缓存的内容;并且去中心化使所有用户数据都通过用户私钥加密，保证了绝对的隐匿性。</p>
+			</div>
+			<div class="IndsetN Huans">
+				<img src="images/icon/Indset03.png">
+				<i></i>
+				<h3 class="Huans">P2P带宽共享</h3>
+				<p class="Huans">&emsp;&emsp;传统的P2P网络模式缺乏有效的经济激励，在实践中导致带宽使用和带宽消耗之间的不平衡。与传统的P2P网络相比，MC可以激励用户积极地为网络贡献带宽，从而使整个网络给予更优越的用户体验。</p>
+			</div>
+			<div class="IndsetN Huans">
+				<img src="images/icon/Indset04.png">
+				<i></i>
+				<h3 class="Huans">首创的C2M挖矿模型</h3>
+				<p class="Huans">&emsp;&emsp;连接并挖矿的机制能很好的激励用户去推广分享并拥有很好的挖矿体验。一边穿越元宇宙世界的同时，还能一边享受挖矿福利。分享多多，挖矿多多，推广多多，佣金多多。挖取的MC拥有广泛的生态应用，可以购买月卡，出售转让和未来增值的属性。</p>
+			</div>
+		</div>
+	</div>
+	
+	<div class="IndBac Indflo Huans" id="NyT4">
+		<div class="IndfloT">发展路线图</div>
+		<ul class="IndfloK Huans">
+			<li class="IndfloNS flexC Huans">				
+				<div class="IndfloP Huans flexC">
+					<div class="IndfloU">1</div>
+					<div class="IndfloPI"><img src="images/icon/IndfloI01.png"></div><p>打造千万粉丝用户</p>
+				</div>
+			</li>
+			<li class="flexC fl-end Huans">
+				<div class="IndfloU">2</div>
+				<div class="IndfloP Huans flexC">
+					<div class="IndfloPI"><img src="images/icon/IndfloI02.png"></div><p>对接机构</p>
+				</div>
+			</li>
+			<li class="IndfloNS flexC Huans">
+				<div class="IndfloU">3</div>
+				<div class="IndfloP Huans flexC">
+					<div class="IndfloPI"><img src="images/icon/IndfloI03.png"></div><p>MC上市薄饼交易和币安交易</p>
+				</div>
+			</li>
+			<li class="flexC fl-end Huans">
+				<div class="IndfloU">4</div>
+				<div class="IndfloP Huans flexC">
+					<div class="IndfloPI"><img src="images/icon/IndfloI04.png"></div><p>推动mc市值过十亿</p>
+				</div>
+			</li>
+			<li class="IndfloNS flexC Huans">
+				<div class="IndfloU">5</div>
+				<div class="IndfloP Huans flexC">
+					<div class="IndfloPI"><img src="images/icon/IndfloI05.png"></div><p>推动mc更多的应用场景</p>
+				</div>
+			</li>
+			<li class="flexC fl-end Huans">
+				<div class="IndfloU">6</div>
+				<div class="IndfloP Huans flexC">
+					<div class="IndfloPI"><img src="images/icon/IndfloI06.png"></div><p>用vip充值费用的50%用来回购mc，使其更具稀缺性</p>
+				</div>
+			</li>
+			<li class="IndfloNS flexC Huans">
+				<div class="IndfloU">7</div>
+				<div class="IndfloP Huans flexC">
+					<div class="IndfloPI"><img src="images/icon/IndfloI07.png"></div><p>开发自己的链游以及公链冷钱包项目</p>
+				</div>
+			</li>
+		</ul>
+	</div>
+	
+	<div class="IndBac Indabo Huans" id="NyT5">
+		<div class="IndaboK Huans">
+			<div class="IndaboLog"><img src="images/icon/aboLog.png"></div>
+			<div class="IndaboT">关于我们</div>
+			<div class="IndaboP">&emsp;&emsp;元链加速器是一款基于区块链的去中心化VPN网络，采用首创的连接挖矿概念。因为没有中心化的服务器，从而避免了中心化的权威性，这个体系自然会变得更加公平和安全。将数据记录到区块链上的方式充分显示了去中心化的价值。简单地说，去中心化VPN结合了许多计算机的流量，并使用点对点系统进行通信。因此，每台计算机都充当一台服务器。来自区块链技术的额外帮助允许节点做出影响VPN的决策。这意味着分散的VPN不能被入侵，因为要想入侵，每一个计算机节点都必须被入侵才能访问系统，这显然是不可能的，并且所有用户数据都通过用户私钥加密，同时通过智能路由网络的加入，保证了用户在整个去中心化世界的匿名性。</div>
+			<div class="IndaboN flexC fl-bet Huans">
+
+				<!--<div class="IndaboNp flexC fl-bet">
+					<img src="images/icon/aboI033.png"><p>网址：www.3j3pk.cn</p>
+				</div>-->
+				<div class="IndaboNp flexC fl-bet">
+					<img src="images/icon/aboI03.png"><p>邮箱：team@metachainvpn.com</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="bignav" id="bignav">
+		<a href="/" class="logo"><h1>元链加速器</h1></a>
+		<script>
+var isIOS2 = navigator.userAgent.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);
+if(isIOS2){
+document.writeln('<a href="download.html" class="downnow"  style="background: red;">立即下载</a>');
+}else{
+	document.writeln('<a href="javascript:;" class="downloadButton downnow" style="background: red;">立即下载</a>');
+	}
+</script>
+		<div class="clear"></div>
+	</div>
+
+	
+	
+
+	<div class="one-bg" id="one-bg"></div>
+	<div class="bootstrap-modal ios-modal" id="ios-modal">
+
+	    <div id="ios-modal-section">
+	        <div class="share">
+	            <h1 class="share-title">温馨提示</h1>
+	            <h1 class="share-paragraph">
+	                因元链加速器的特殊属性，Android安装时可能会被部分机型视为危险软件禁止安装，请参考以下方式安装软件：<br/><br/>
+
+					*华为手机需退出纯净模式后安装：<br/>
+
+					您可通过以下任一方式退出纯净模式。<br/>
+
+					1.请点击<i>设置</i>＞<i>系统和更新</i>＞<i>纯净模式</i>，点击退出；<br/>
+
+					2.从屏幕顶部右侧下滑出<i>控制中心</i>，点击－<i>展开快捷开关栏</i>（取决于您的机型），关闭纯净模式。<br/>
+
+					*其他品牌Android手机请忽略安全风险安装。<br/>
+	            </h1>
+
+	            <div>
+	            <a href="javascript:;" onclick="androidDownload()"><div class="btn-close close-bootstrap-modal">立即下载</div></a>
+	            </div>
+	        </div>
+	    </div>
+
+	</div>
+</body>
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+	
+	//弹出
+	$('.IndwinNO').click(function(){
+		$(this).parent().parent().parent().addClass("Indwinsd")
+		$('.TCB').fadeIn(500);
+		setTimeout(function () {
+		 $('.TCB').fadeOut(500);
+		 }, 3000);
+	})
+	$('.colse').click(function(){$('.TCB').fadeOut(100);$('.TCnr').slideUp(200);});	
+	
+	//wap下拉菜单
+	$('.wapNav').click(function(){	  
+	  if(!$('.wapNav').hasClass('wapNavO')){
+		$('.wapNav').addClass('wapNavO');$(".Menu").addClass('MenuO');$('.backB').fadeIn(500);
+	  }else{
+		$('.wapNav').removeClass('wapNavO');$('.Menu').removeClass("MenuO");$('.backB').fadeOut(100);
+	  }
+	});
+	$('.backB').click(function(){$('.wapNav').removeClass('wapNavO');$('.Menu').removeClass("MenuO");$('.backB').fadeOut(100);});	
+	
+})	
+$(function(){
+    //锚点跳转滑动效果  
+    $('a[href*=#],area[href*=#]').click(function() {  
+        console.log(this.pathname)  
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {  
+            var $target = $(this.hash);  
+            $target = $target.length && $target || $('[name=' + this.hash.slice(1) + ']');  
+            if ($target.length) {  
+                var targetOffset = $target.offset().top-100;  
+                $('html,body').animate({scrollTop: targetOffset}, 1000);  
+                return false;  
+            }  
+        }  
+    }); 
+})
+
+$(window).scroll(function(){
+	if($(window).scrollTop() >= 100){$('.header').addClass("headerO");}else{$('.header').removeClass("headerO");}
+	var wst =  $(window).scrollTop()+150;//滚动条距离顶端值
+	 for (var i=1; i<6; i++){             //加循环
+	  if($("#NyT"+i).offset().top<=wst){ //判断滚动条位置
+		 $(".MenuA").removeClass("on"); //清除c类
+		 $("#NyT"+i+i).addClass("on");
+		 }
+	 }
+});
+
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2PZLPKCW7R"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-2PZLPKCW7R');
+  gtag('config', 'AW-696893628');
+  var btn_gtag = "AW-696893628/uEZ6CKH6u-YCELyBp8wC";
+</script>
+</html>

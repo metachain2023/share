@@ -1,0 +1,8 @@
+html{height: 100%;width: 100%;}
+body{width: 7.5rem;margin: 0 auto;background: url("../images/download-bg.png") 0 0 no-repeat;background-size: cover;}
+.top{margin-top: 0.66rem;text-align: center;}
+.top .step1{width: 3.06rem;height: 0.66rem;margin-bottom: 0.7rem;}
+.top .step2{width: 6.22rem;height: 0.57rem;margin-bottom: 0.64rem;}
+.top .step3{width: 6.04rem;height: 0.33rem;}
+.container{margin-top: 5.28rem;text-align: center;}
+.container button{width: 4.4rem;height: 0.76rem;margin-bottom: 0.32rem;background-color: #5F45DA;line-height: 0.76rem;border-radius: 0.46rem;font-size: 0.28rem;font-family: PingFang SC-Medium, PingFang SC;font-weight: 500;color: #FFFFFF;}

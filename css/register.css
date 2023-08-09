@@ -1,0 +1,46 @@
+.body{overflow: hidden;background: url("../images/bg.png") 0 0 no-repeat;background-size: cover;width: 7.5rem;margin: 0 auto;font-family: PingFang SC-Regular, PingFang SC;font-weight: 400;font-size: 0.28rem;color: #999999;}
+
+.top{width: 6.9rem;margin: 0.66rem auto 0 auto;text-align: center;}
+.top img.step1{width: 3.06rem;height: 0.66rem;margin-bottom: 0.5rem;}
+.top img.step2{width: 6.22rem;height: 0.57rem;margin-bottom: 0.52rem;}
+.top img.step3{width: 6.04rem;height: 0.33rem;margin-bottom: 0.44rem;}
+input{color: #0F0C27;font-family: PingFang SC-Medium, PingFang SC;font-weight: 500;}
+.line{height: 0.02rem;background: #C9C9C9;}
+.container{width: 6.9rem;margin: 0 auto;margin-bottom: 0.6rem;background-color: #FFFFFF;box-shadow: 0 0.06rem 0.12rem 0.02rem rgba(0,0,0,0.16);border-radius: .12rem;}
+.container .content{padding: 0.6rem 0.3rem;padding-top: 0.2rem;}
+.container ul li{height: 1.44rem;margin-left: 0.24rem;}
+.container ul li > div:first-child{padding-top: 0.4rem;height: 0.8rem;}
+.container ul li > div:last-child{position: relative;height: 0.4rem;line-height: 0.4rem;margin-top: 0.08rem;margin-bottom: 0.16rem;font-family: PingFang SC-Medium, PingFang SC;font-weight: 500;color: #0F0C27;}
+.container ul li > div:last-child button:first-child{font-family: PingFang SC-Medium, PingFang SC;font-weight: 500;color: #0F0C27;}
+.container ul li > div:last-child button:last-child{float: right;color: #5F45DA;margin-right: 0.2rem;}
+.container ul li > div:last-child button img{width: 0.26rem;height: 0.15rem;margin-left: 0.12rem;margin-top: 0.14rem;}
+.container ul li a img{width: 0.44rem;height: 0.33rem;margin-top: 0.08rem;}
+.container .register{display: block;margin: 0.4rem auto;width: 4.4rem;height:0.76rem;background-color: #5F45DA;line-height: 0.76rem;border-radius: 0.46rem;font-family: PingFang SC-Medium, PingFang SC;font-weight: 500;color: #FFFFFF;}
+.container .desc{color: #0F0C27;text-align: center;}
+.container .desc a{color: #5F45DA;cursor: pointer;}
+.container .go-login{display: block;color: #5F45DA;text-align: center;cursor: pointer;margin-top: 0.4rem;}
+.footer{margin: 0.6rem auto;color: #0F0C27;font-size: 0.24rem;font-family: PingFang SC-Light, PingFang SC;font-weight: 300;}
+.footer > div:first-child{margin-bottom: 0.4rem;text-align: center;font-size: 0.28rem;font-family: PingFang SC-Regular, PingFang SC;font-weight: 400;}
+.footer div div{display: flex;}
+.footer div div img{width: 0.13rem;height: 0.08rem;margin-top: 0.13rem;margin-right: 0.19rem;}
+.prompt div:first-child{position: absolute;top: 0;right: 0;bottom: 0;left: 0;backdrop-filter: blur(20px);background-color: rgba(0, 0, 0, 0.5);}
+.prompt img{margin-left: 1.1rem;height: 4.14rem;}
+.prompt div:last-child{position: absolute;top: 0;}
+input[type=text]::placeholder{color: #999999;}
+input[type=password]::placeholder{color: #999999;}
+#phone-code{position: fixed;top:0;left: 0;right: 0;bottom: 0;display: none;background: rgba(0,0,0,0.3);}
+#phone-code>div{margin-top:3.82rem;margin-left: 0.5rem;margin-right: 0.5rem;width: 6.5rem;height: 8.8rem;background-color: white;box-shadow: 0 0.06rem 0.12rem 0.02rem rgba(0,0,0,0.16);border-radius: 0.12rem}
+#phone-code .title{font-size: 0.36rem;font-family: PingFang SC-Medium, PingFang SC;font-weight: 500;text-align: center;padding-top: 0.24rem;margin-bottom: 0.34rem;}
+#phone-code .title img{width: 0.19rem;height: 0.19rem;float: right;margin-right: 0.4rem;margin-top: 0.16rem;}
+#phone-code > div > div:last-child{position: relative;height: 7.72rem;margin-left: 0.4rem;overflow: scroll;}
+
+#letters{position: fixed;right: 0.62rem;width: 0.28rem;color: #5F45DA;}
+#letters li{text-align: left;line-height: 0.34rem;font-size: 0.24rem;font-family: PingFang SC-Medium, PingFang SC;font-weight: 500;}
+
+.list-container{height: 100%;font-size: 0.28rem;}
+.list-container #namesList dd {line-height: 0.92rem;color: #212121;}
+.list-container #namesList dd span{float: right;margin-right: 0.6rem;color: #999999;}
+.list-container #namesList dt{font-family: PingFang SC-Medium, PingFang SC;font-weight: 500;color: #212121;line-height: 0.92rem;}
+.list-container #namesList .line{width: 5.70rem;height: 0.02rem;background: #F0F0F0;}
+
+

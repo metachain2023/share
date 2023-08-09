@@ -1,0 +1,172 @@
+* { box-sizing:border-box;-moz-box-sizing:border-box; /* Firefox */-webkit-box-sizing:border-box; /* Safari */-webkit-text-size-adjust: none; outline: none; }
+
+body{-webkit-text-size-adjust:none;font-family:Arial, Helvetica,sans-serif; line-height:26px;}
+body {
+  background: #f2f1f7;
+  color: #666;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px; padding: 0px; margin: 0px
+}
+
+h1, h2, h3, h4, h5, h6 {}
+
+a > h1, a > h2, a > h3, a > h4, a > h5, a > h6 {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+
+p{ margin:0px; padding:0px}
+dd{margin:0px; padding:0px}
+a {
+  color: #181818;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease; display: inline-block;  text-decoration: none
+}
+
+a:hover, a:focus, a:active, a:visited {
+  color: #181818;
+  text-decoration: none;
+  outline: none; }
+img{vertical-align: top}
+/*-----------------共用------------*/
+.space1{ overflow:hidden; clear:both; height:10px; width:100%}
+.space2{ overflow:hidden; clear:both; height:20px; width:100%}
+.space3{ overflow:hidden; clear:both; height:30px; width:100%}
+.space4{ overflow:hidden; clear:both; height:40px; width:100%;}
+
+.main_box1{ max-width:750px; overflow:hidden; margin:0 auto; padding: 0px 3%; background: #f2f1f7}
+.main_box2{ max-width:750px; overflow:hidden; margin:0 auto; padding: 0px 3%; background: #fff}
+.main_top_k{ max-width:750px; overflow:hidden; width:100%; margin:0 auto;}
+
+.main_nr{ overflow:hidden; margin:0; padding: 0}
+
+li{list-style: none}
+ul{ margin: 0px; padding: 0px}
+
+
+@media only screen and (max-width:1000px) {
+.space2{ overflow:hidden; clear:both; height:10px; width:100%}
+.space3{ overflow:hidden; clear:both; height:15px; width:100%}
+.space4{ overflow:hidden; clear:both; height:20px; width:100%}
+}
+
+
+.bai_bg{ width:100%; padding:30px 0px 30px 0px; overflow:hidden; }
+
+
+
+.content_txt{line-height:190%;font-size:18px; overflow:hidden; padding:0px;}
+.content_txt img{MAX-WIDTH: 100%!important;HEIGHT: auto!important;}
+
+
+.content_img{overflow:hidden; width:100%; text-align:center}
+.content_img img{MAX-WIDTH: 100%!important;HEIGHT: auto!important;}
+
+.content_txt table{ table-layout: fixed;word-break: break-all; }
+.content_txt table td{border:1px solid #999}
+.content_txt table{border:1px solid #999} 
+
+
+
+.yl_vpn_xz{overflow:hidden; margin:0; padding: 0 ;}
+.yl_vpn_L{overflow:hidden; margin:0; padding: 0 ;width:auto;float:left}
+.yl_vpn_R{overflow:hidden; margin:0; padding: 0 ;width:auto;float:right; padding-top: 28px}
+
+.yl_vpn_sm{overflow:hidden; margin:0; padding: 0 }
+.yl_vpn_sm dl{overflow:hidden; margin:0; padding: 0; margin-top: 6px }
+.yl_vpn_sm dl dt{overflow:hidden; margin:0; padding: 0;font-size:30px; line-height: 40px;font-weight: 700; color: #222}
+.yl_vpn_sm dl dd{overflow:hidden; margin:0; padding: 0;font-size: 18px; line-height: 30px ;color: #222 }
+.yl_vpn_sm dl dd span{ padding: 3px 5px; margin: 0px; margin-right: 5px; color: #fff; background: #31c2e1}
+
+.yl_vpn_logo{margin: 0px; padding: 0px; margin-right: 20px; float: left; width: 96px; height: auto;}
+
+.yl_vpn_logo img{ width: 96px;  height: 96px; vertical-align: top; border-radius: 18px;}
+
+.xz_btn{ background-color: #34c1e1; text-align: center; color: #fff; line-height: 40px; font-weight: 22px; padding: 0 20px;border-radius: 8px;}
+.yl_vpn_R a:hover { color: #fff}
+
+@media only screen and (max-width:650px) {
+.yl_vpn_sm dl{margin-top: 5px }
+.yl_vpn_sm dl dt{font-size:20px; line-height: 30px;}
+.yl_vpn_sm dl dd{font-size: 14px; line-height:24px}
+	
+.yl_vpn_logo{margin: 0px; padding: 0px; margin-right: 15px; float: left; width: 70px; height: auto;}
+.yl_vpn_logo img{ width: 70px;  height: 70px; vertical-align: top; border-radius: 15px;}
+
+.yl_vpn_R{padding-top:15px}
+.xz_btn{ font-weight: 16px; padding: 0 15px; }
+}
+
+.zx_sm_box{ margin: 30px 0px; background: #e0dfe8; padding: 30px 20px; line-height: 190%;font-weight: 18px; border-radius: 12px;}
+.zx_sm_box span{ color: #34c1e1;}
+@media only screen and (max-width:650px) {
+.zx_sm_box{font-weight: 16px;}
+
+}
+
+
+
+
+
+.jc_title{overflow:hidden; margin:0; padding: 0;}
+.jc_title dl{overflow:hidden; margin:0; padding: 0; margin-top: 6px }
+.jc_title dl dt{overflow:hidden; margin:0; padding: 0;font-size:42px; line-height: 54px;font-weight: 700; color: #222; margin-bottom: 20px}
+.jc_title dl dd{overflow:hidden; margin:0;  font-size: 18px; line-height:30px ;color: #3565ff; padding: 20px; background: #dce4ff}
+
+.jc_title dl dd a{color: #3565ff}
+
+@media only screen and (max-width:650px) {
+.jc_title dl dt{font-size:32px; line-height: 40px;}		
+}
+@media only screen and (max-width:450px) {
+.jc_title dl dt{font-size:28px; line-height: 36px;}		
+}
+
+
+
+.jc_ml{overflow:hidden; margin:0; padding: 0;}
+.jc_ml dl{overflow:hidden; margin:0; padding: 0;}
+.jc_ml dl dt{overflow:hidden; margin:0; padding: 0;}
+.jc_ml dl dd{overflow:hidden; margin:0; padding: 0;font-size: 18px; line-height:190%; color: #3565ff}
+.jc_ml dl dd a{ color: #3565ff; text-decoration: underline}
+
+.jc_bt_txt1{font-size: 30px;font-weight: 700; color: #222; margin-bottom: 15px}
+.jc_bt_txt2_lan{font-size: 18px; line-height:190%; color: #3565ff;margin-bottom: 10px}
+.jc_bt_txt2_lan a{color: #3565ff;text-decoration: underline}
+
+@media only screen and (max-width:450px) {}
+
+@media only screen and (max-width:650px) {
+.jc_bt_txt1{font-size: 24px;font-weight: 700; color: #222; margin-bottom: 10px}	
+.content_txt{font-size:16px;}	
+}
+
+@media only screen and (max-width:410px) {
+.jc_bt_txt2_lan a{font-size: 16px}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

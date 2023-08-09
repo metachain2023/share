@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" type="text/css" href="./css/base.css">
+  <link rel="stylesheet" type="text/css" href="./css/register.css">
+  <script src="./js/flexible_css.js"></script>
+  <script src="./js/flexible.min.js"></script>
+  <title>注册</title>
+</head>
+<body>
+<div class="body">
+  <div class="top">
+    <img class="step1"  src="images/step1.png" />
+    <img class="step2" src="images/step2.png" />
+    <img class="step3" src="images/step3.png" />
+  </div>
+<div class="container">
+  <div class="content">
+    <ul>
+      <li>
+        <div class="phone-title"></div>
+        <div>
+          <button class="show-phone-list"><span>+86</span><img src="images/icon_down.png" /></button>
+          <input type="text" name="phone" id="phone-input" class="phone" placeholder="请输入手机号" autocomplete="off" style="margin-left: 0.24rem;"/>
+        </div>
+      </li>
+      <div class="line"></div>
+      <li>
+        <div class="password-title"></div>
+        <div>
+          <input type="password" id="password-input" class="password" placeholder="请输入密码" autocomplete="off"/>
+          <a id="changePassword" style="float: right;margin-right: 0.2rem;"><img src="images/icon_eye_close.png"/></a>
+        </div>
+      </li>
+      <div class="line"></div>
+      <li>
+        <div class="captcha-title"></div>
+        <div>
+          <input type="text" id="captcha-input" placeholder="输入手机验证码" class="captcha" autocomplete="off" />
+          <button id="captcha" onclick="getCaptcha()"><div style="margin-top: -0.07rem;">获取验证码</div></button>
+        </div>
+      </li>
+      <div class="line"></div>
+      <li>
+        <div>邀请码</div>
+        <div><input type="text" class="invite_code" readonly/></div>
+      </li>
+      <div class="line"></div>
+    </ul>
+
+    <button class="register" onclick="register()"><div>立即注册</div></button>
+
+    <div class="desc">
+      点击注册即表示同意<a href="service.html">《服务协议》</a><a href="privacy.html">《隐私政策》</a>
+    </div>
+
+      <a href="javascript:;" onclick="downloadUrl()" style="text-decoration: revert;">
+        <div class="go-login">
+          已有账号? 点这里直接下载APP
+        </div>
+      </a>
+
+    <div class="footer">
+      <div>— 有效绑定规则 —</div>
+      <div>
+        <div><img src="images/icon_invite_rule.png"/>1.用户必须完成网页注册并进行首次APP登录，才算一次完整的有效邀请绑定；</div>
+        <div><img src="images/icon_invite_rule.png"/>2.用户设备必须从未注册和登录过元链加速器，否则视为无效推荐；</div>
+        <div><img src="images/icon_invite_rule.png"/>3.同一IP地址（如：同一WiFi网络等）来源，24小时内限制绑定5个有效邀请码，超过5个将被视为无效绑定;</div>
+        <div><img src="images/icon_invite_rule.png"/>4.请用户悉知，严格按照该规定进行邀请绑定，以免绑定邀请码失败。</div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div id="phone-code">
+  <div>
+    <div class="title">手机号归属地 <a onclick="closePhoneCode()"><img src="images/icon_close.png" /></a></div>
+    <div>
+      <ul id="letters">
+      </ul>
+<!--       phone code list-->
+      <div class="list-container">
+        <dl id="namesList">
+        </dl>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="prompt" id="prompt">
+  <div>
+  </div>
+  <div><img src="images/prompt.png" /></div>
+</div>
+
+</body>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/new_alert.js"></script>
+<script type="text/javascript" src="js/layer.js"></script>
+<script type="text/javascript" src="js/register.js"></script>
+<script>
+  var ua = navigator.userAgent.toLowerCase();
+
+  if(ua.indexOf("micromessenger")>-1 || ua.indexOf("weibo")>-1 || ua.indexOf("qq")>-1){
+    if (ua.indexOf("mqqbrowser")>-1 || ua.indexOf("qqtheme")>-1){
+      $(".prompt").hide();
+    }else {
+      $(".prompt").show();
+    }
+  }else{
+    $(".prompt").hide();
+  }
+
+  $("#prompt")[0].addEventListener('touchmove', e => {
+        e.preventDefault()
+    }, false);
+  $(".show-phone-list").on('click', function (){
+    $("#phone-code").show();
+    $("html").css("overflow", "hidden");
+  })
+  function closePhoneCode(){
+    $("#phone-code").hide();
+    $("html").css("overflow", "auto");
+  }
+
+  $("#changePassword").on('click', function(){
+      
+  })
+
+  $("#phone-input").bind("input propertychange",function(event){
+       let phone = $("#phone-input").val();
+       if(phone.length>0){
+          $(".phone-title").text('请输入手机号');
+       }else{
+        $(".phone-title").text('');
+       }
+  });
+  $("#password-input").bind("input propertychange",function(event){
+       let password = $("#password-input").val();
+       if(password.length>0){
+          $(".password-title").text('请输入密码');
+       }else{
+        $(".password-title").text('');
+       }
+  });
+  $("#captcha-input").bind("input propertychange",function(event){
+       let captcha = $("#captcha-input").val();
+       if(captcha.length>0){
+          $(".captcha-title").text('输入手机验证码');
+       }else{
+        $(".captcha-title").text('');
+       }
+  });
+</script>
+</html>
