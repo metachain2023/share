@@ -130,7 +130,8 @@ function register(){
 }
 
 function getCaptcha(){
-    var phone = $("#phone-input").val();
+    var areacode = $(".show-phone-list span").text();
+    var phone = $(".phone").val();
     if (phone.length<5 || areacode.length<=0){
         layer.open({
             content: "请输入正确的手机号",
@@ -147,7 +148,7 @@ function getCaptcha(){
         url: DomainUrl+"/api/captcha",
         async: true, // 是否异步
         dataType: "json", // 设置数据类型
-        data: {"username": phone},
+        data: {"username": areacode+"-"+phone},
         success: function (data){
             $("#captcha").css("pointer-events","all");
             if(data.code==200){
