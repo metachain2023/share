@@ -76,10 +76,10 @@ $("#changePassword").on('click', function () {
 });
 
 function register(){
-    var password = $(".password").val();
+    var password = $("#password-input").val();
     var areacode = $(".show-phone-list span").text();
-    var phone = $(".phone").val();
-    var captcha = $(".captcha").val();
+    var phone = $("#phone-input").val();
+    var captcha = $("#captcha-input").val();
     var inviteCode = $(".invite_code").val();
 
     if (phone.length<5 || areacode.length<=0){
@@ -130,8 +130,8 @@ function register(){
 }
 
 function getCaptcha(){
-    var phone = $(".phone").val();
-    if (!/^1[3-9]\d{9}$/.test(phone)){
+    var phone = $("#phone-input").val();
+    if (phone.length<5 || areacode.length<=0){
         layer.open({
             content: "请输入正确的手机号",
             skin: 'msg',
